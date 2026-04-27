@@ -1,5 +1,7 @@
 ****************Evaluation Inputs and Outputs***************
 
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------
+
 *****Input Prompt 1:*****
 You are a financial analyst. Summarize the following quarterly report into a 150-word executive summary. Include a table of key metrics(Revenue, EPS, Growth%) and a section listing top risks and opportunities. Ensure all the data is factual and derived fromt the context provided.
 
@@ -19,6 +21,8 @@ You are a financial analyst. Summarize the following quarterly report into a 150
     1.  **Specify the target audience:** Add who the executive summary is intended for (e.g., "for board members," "for potential investors," "for internal stakeholders") to help tailor the tone and emphasis of the summary.
     2.  **Clarify table format:** While "table of key metrics" is good, specifying if it should include year-over-year or quarter-over-quarter comparisons, or a specific number of rows/columns, could add more precision.
     3.  **Suggest a tone:** While the persona implies a professional tone, explicitly stating "maintain a professional and objective tone" could reinforce this.
+
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 *****Input Prompt 2:*****
 You are a project manager drafting a client email. Write a formal emails summarizing project progress, upcoming milestones, and request feedback. Include placeholders for [Client Name], [Project Name], and [Deadline]. Add a bullet list of action items.
@@ -40,6 +44,8 @@ The prompt is clear, effectively defines a persona, and outlines the core task o
     2.  **Refine Feedback Request**: Specify the *type* of feedback desired or a call to action for it (e.g., "request feedback on specific deliverables or overall satisfaction, suggesting a follow-up call to discuss").
     3.  **Suggest Length/Detail Level**: Add a constraint on the email's length or level of detail (e.g., "write a concise, professional email" or "provide a detailed update").
 
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------
+
 *****Input Prompt 3:*****
 You are a HR compliance auditor. Review the following policy text and identify missing compliance clauses, ambiguous language, and suggest improvements. Return output in JSON format with keys: issues, severity, recommendations. Cite references where applicable. Context: {policy_text}
 
@@ -60,6 +66,8 @@ You are a HR compliance auditor. Review the following policy text and identify m
     2.  **Provide Organizational Context**: Include information about the company's industry, size, and geographical locations to help the auditor tailor the compliance review more accurately.
     3.  **Define Severity Levels**: Clarify what constitutes "severity" for the output (e.g., "Severity should be categorized as Critical, High, Medium, Low based on legal risk and potential impact on the organization").
 
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------
+
 *****Input Prompt 4:*****
 You are a meeting assistant. Summarize the following transcript into structured Markdown with sections: Decisions and Action Items. For each action item, include owner, deadline, and confidence score. Context: {transcript_text}
 
@@ -78,6 +86,8 @@ You are a meeting assistant. Summarize the following transcript into structured 
     1.  **Enhance Specificity for Action Items:** Clarify the expected format for "owner," "deadline" (e.g., YYYY-MM-DD), and "confidence score" (e.g., a scale of 1-5, or high/medium/low).
     2.  **Add Output Length/Conciseness:** Specify the desired length or level of detail for the summary (e.g., "a concise summary," "a comprehensive summary," "no more than 200 words").
     3.  **Provide More Contextual Information:** If available, include details about the meeting's purpose, key attendees, or the project discussed, as this can help the AI prioritize information for the summary.
+
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 *****Input Prompt 5:*****
 You are a market research analyst. Generate a market analysis brief from the provided articles and reports. Include a SWOT analysis, top 3 trends with citations, and a narrative summary. Output JSON with keys: SWOT, trends, citations, and a separate narrative summary. Context: {documents}
@@ -99,6 +109,7 @@ The prompt is clear, effectively defines a persona, and specifies a precise outp
 2.  **Add Specificity to Content:** Provide guidelines for the depth or length of each section (e.g., "SWOT analysis with 3-5 points per quadrant," "narrative summary of 200-300 words," "trends should include market size, growth rate, and impact").
 3.  **Clarify Document Expectations:** Briefly describe the *types* of articles and reports expected in `{documents}` (e.g., "financial reports, industry news, competitor analysis, consumer surveys") to guide the user on what to provide.
 
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 *****Input Prompt 6:*****
 You are a professional content writer and coding expert. Explain everything clearly but keep it short. Make sure it works perfectly in all cases and follows best practices. Also optimize it and make it more readable and efficient.
@@ -119,6 +130,7 @@ You are a professional content writer and coding expert. Explain everything clea
     2.  **Define the target audience**: Indicate who the explanation is for (e.g., "for beginners," "for experienced developers," "for a non-technical manager") to tailor the complexity and vocabulary.
     3.  **Add concrete output format/length constraints**: Instead of "keep it short," specify a word count (e.g., "under 250 words"), paragraph limit (e.g., "in 3-4 paragraphs"), or desired structure (e.g., "using markdown headings and bullet points, including a small code snippet").
 
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 *****Input Prompt 7:*****
 You are an expert developer and reviewer. Analyze my code, fix all issues, improve performance, and rewrite it if needed. Make it clean, scalable, and perfect. Add comments and explanations but don’t make it too long. Ensure it handles all edge cases and works everywhere.
@@ -138,3 +150,5 @@ You are an expert developer and reviewer. Analyze my code, fix all issues, impro
     1.  **Provide the actual code:** This is the most crucial missing element. Without the code, the prompt is unactionable.
     2.  **Add context about the code:** Specify the programming language, framework, purpose of the code, current known issues, and target environment/audience.
     3.  **Define "perfect," "scalable," and "everywhere" more concretely:** Provide specific metrics, performance targets, or target platforms/environments. Clarify what "not too long" means for explanations (e.g., max X paragraphs, focus on key changes).
+
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------
