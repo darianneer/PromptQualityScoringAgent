@@ -47,6 +47,4 @@ The notebook then computes a **Final Score** (average of all five criteria), **S
     1.  Provide the actual code: This is the most crucial missing element. Without the code, the prompt is unactionable.
     2.  Add context about the code: Specify the programming language, framework, purpose of the code, current known issues, and target environment/audience.
     3.  Define "perfect," "scalable," and "everywhere" more concretely: Provide specific metrics, performance targets, or target platforms/environments. Clarify what "not too long" means for explanations (e.g., max X paragraphs, focus on key changes).
-```
 
-This system provides a structured way to get feedback on your prompts, helping you refine them for better performance with large language models.
